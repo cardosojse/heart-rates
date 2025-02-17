@@ -3,11 +3,11 @@ package HeartRates;
 import java.time.LocalDate;
 
 public class HeartRate {
-    String name;
-    String lastName;
-    int birthDay;
-    int birthMonth;
-    int birthYear;
+    private String name;
+    private String lastName;
+    private int birthDay;
+    private int birthMonth;
+    private int birthYear;
 
     public HeartRate(String name, String lastName, int birthDay, int birthMonth, int birthYear) {
         this.name = name;
@@ -21,28 +21,40 @@ public class HeartRate {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getLastName() {
         return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public int getBirthDay() {
         return birthDay;
     }
 
+    public void setBirthDay(int birthDay) {
+        this.birthDay = birthDay;
+    }
+
     public int getBirthMonth() {
         return birthMonth;
+    }
+
+    public void setBirthMonth(int birthMonth) {
+        this.birthMonth = birthMonth;
     }
 
     public int getBirthYear() {
         return birthYear;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
     }
 
     public String getUserName(String name, String lastName) {

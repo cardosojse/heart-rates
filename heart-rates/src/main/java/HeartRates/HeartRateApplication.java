@@ -7,7 +7,14 @@ public class HeartRateApplication {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Type your name");
-        String userName = input.next().trim();
+        String userName;
+        do {
+            userName = input.next().trim();
+
+            if (userName.isEmpty()) {
+                System.out.println("Invalide name! Type again...");
+            }
+        } while (userName.isEmpty());
 
         System.out.println("Type your last name");
         String userLastName = input.next().trim();
